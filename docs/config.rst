@@ -145,6 +145,18 @@ Those configuration options are documented below:
             includePaths: [/https?:\/\/getsentry\.com/, /https?:\/\/cdn\.getsentry\.com/]
         }
 
+.. describe:: collectWindowErrors
+
+  By default Raven collects all uncaught errors, that has been caught by `onerror` handler.
+  You can disable this behaviour by setting this flag to `false`. May be useful in a scenario,
+  where you just want to manually handle errors using `captureMessage` and `captureException` methods.
+
+    .. code-block:: javascript
+
+        {
+            collectWindowErrors: false
+        }
+
 .. describe:: sampleRate
 
     A sampling rate to apply to events. A value of 0.0 will send no events,
