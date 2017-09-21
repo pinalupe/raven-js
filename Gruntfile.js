@@ -222,16 +222,12 @@ module.exports = function(grunt) {
             // Latest version of Edge (v15) can't reach the server
             // Already notified SauceLabs support about this issue
             // ['Windows 10', 'microsoftedge', 'latest'],
-
             ['Windows 10', 'microsoftedge', 'latest-1'],
-            ['Windows 10', 'internet explorer', '11'],
-            ['Windows 7', 'internet explorer', '11'],
-            ['Windows 7', 'internet explorer', '10'],
             ['Windows 10', 'chrome', 'latest'],
             ['Windows 10', 'firefox', 'latest'],
-            ['macOS 10.12', 'safari', '10'],
-            ['macOS 10.12', 'chrome', 'latest'],
-            ['macOS 10.12', 'firefox', 'latest']
+            ['Windows 7', 'internet explorer', '11'],
+            ['Windows 7', 'internet explorer', '10'],
+            ['macOS 10.12', 'safari', '10']
           ],
           public: 'public',
           tunnelArgs: ['--verbose'],
